@@ -135,24 +135,12 @@
             data-aos-duration="1500"
             data-aos-delay="1700"
           >
-            <button>Download CV</button>
+            <button onclick="downloadResume()">Download CV</button>
           </div>
         </div>
       </div>
     </section>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({ offset: 0 });
-    </script>
-    <script>
-      function hamburg() {
-        const navbar = document.querySelector(".dropdown");
-        navbar.style.transform = "translateY(0px)";
-      }
-      function cancel() {
-        const navbar = document.querySelector(".dropdown");
-        navbar.style.transform = "translateY(-400px)";
-      }
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
