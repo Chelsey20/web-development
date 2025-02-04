@@ -60,8 +60,8 @@ nav {
   transition: 0.3s linear;
 }
 
-.nav-container .links a:hover,
-.nav-container .links a:active {
+.nav-container .links .link:hover a,
+.nav-container .links .link.active a {
   color: rgb(0, 97, 202);
   border-bottom: 2px solid rgb(0, 97, 202);
 }

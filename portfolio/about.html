@@ -1,13 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
   </head>
-  <body style="background-color: white">
-    <h1>About Us</h1>
-    <p>This is the About section.</p>
-    <a href="index.html">Back to Main Page</a>
-  </body>
+  <div class="about-me-container">
+    <div class="image">
+      <img src="images/img-1.jpg" />
+    </div>
+    <div class="content">
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged. It was popularised in the 1960s with the release
+        of Letraset sheets containing Lorem Ipsum passages, and more recently
+        with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
+      </p>
+    </div>
+  </div>
 </html>
+
+<style>
+  .about-me-container {
+    margin-top: 2%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: aqua; */
+  }
+
+  .about-me-container .image {
+    width: 300px;
+    height: 50vh;
+    overflow: hidden;
+  }
+  .about-me-container img {
+    height: 100%;
+    border-radius: 20%;
+  }
+
+  .about-me-container .content {
+    color: white;
+    width: 40%;
+    min-height: 115px;
+  }
+</style>

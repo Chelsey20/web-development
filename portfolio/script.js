@@ -39,20 +39,39 @@ function loadContent(page) {
 // Get all navbar links
 const navLinks = document.querySelectorAll(".link");
 
+// Function to update active link styling
+function setActiveLink(clickedLink) {
+  // Remove active class from all links
+  navLinks.forEach((nav) => nav.classList.remove("active"));
+
+  // Add active class to the clicked link
+  clickedLink.classList.add("active");
+}
+
 // Add event listener for each link
 navLinks.forEach((link) => {
   link.addEventListener("click", (event) => {
     event.preventDefault();
 
-    // Load the corresponding HTML file
-    const page = event.target.dataset.content;
-    loadContent(page);
+    // Find the nearest `.link` div
+    const clickedLink = event.target.closest(".link");
 
-    // Update active link styling
-    navLinks.forEach((nav) => nav.classList.remove("active"));
-    event.target.classList.add("active");
+    if (!clickedLink) return; // Prevent errors if clicked outside a link
+
+    // Get the page from the `<a>` inside `.link`
+    const page = clickedLink.querySelector("a").dataset.content;
+
+    // Load the content and update active state
+    loadContent(page);
+    setActiveLink(clickedLink);
   });
 });
 
-// Load home page content by default
-loadContent("home.html");
+// Load home page content by default and set Home as active
+const defaultPage = "about.html"; // Change this to your home page
+loadContent(defaultPage);
+setActiveLink(
+  document
+    .querySelector('.link a[data-content="' + defaultPage + '"]')
+    .closest(".link")
+);
