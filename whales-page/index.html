@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="main-container">
+      <nav>
+        <i class="fa-solid fa-bars hamburg"></i>
+      </nav>
+
+      <p class="title">Whales</p>
+
+      <div class="tab">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide content">
+              <img src="whale-1.jpg" />
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum is simply dummy text of the printing ...
+              </p>
+            </div>
+
+            <div class="swiper-slide content">
+              <img src="whale-1.jpg" />
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+            </div>
+
+            <div class="swiper-slide content">
+              <img src="whale-1.jpg" />
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+            </div>
+
+            <div class="swiper-slide content">
+              <img src="whale-1.jpg" />
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+            </div>
+
+            <div class="swiper-slide content">
+              <img src="whale-1.jpg" />
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+            </div>
+
+            <div class="swiper-slide content">
+              <img src="whale-1.jpg" />
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: rgb(18, 51, 70);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .main-container {
+    position: relative;
+    margin: 2%;
+    background-image: url(whale.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 96vh;
+    width: 96vw;
+  }
+
+  .main-container .title {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Nova Square", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 70px;
+  }
+
+  .main-container nav {
+    margin: 1%;
+    z-index: 10;
+  }
+
+  .hamburg {
+    cursor: pointer;
+    color: white;
+    font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
+  }
+
+  /* Fix the tab container */
+  .main-container .tab {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    background-image: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0.3),
+      rgba(0, 0, 0, 0.2)
+    );
+    background-size: 30px;
+    height: 36vh;
+    width: 80%;
+    color: white;
+    border-radius: 50px 50px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 60px;
+  }
+
+  /* Swiper container must fit inside tab */
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  /* Ensure slides align properly */
+  .swiper-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Fix content display */
+  .content {
+    display: flex;
+    height: 100%;
+    justify-items: center;
+  }
+
+  .content p {
+    margin: 10px 20px;
+  }
+
+  .content img {
+    max-width: 70%;
+    border-radius: 20px;
+  }
+
+  /* Swiper buttons */
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: #fff;
+    width: 50px; /* Adjust width */
+    height: 50px;
+    font-size: 30px;
+  }
+</style>
