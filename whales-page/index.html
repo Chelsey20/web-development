@@ -27,7 +27,9 @@
         <div class="swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide content">
-              <img src="whale-1.jpg" />
+              <div class="image-holder">
+                <img src="whale-1.jpg" />
+              </div>
               <p>
                 Blue Whale – The largest animal on Earth, reaching up to 100
                 feet and weighing 200 tons. They feed on krill.
@@ -35,7 +37,9 @@
             </div>
 
             <div class="swiper-slide content">
-              <img src="humpback-whale.jpg" />
+              <div class="image-holder">
+                <img src="humpback-whale.jpg" />
+              </div>
               <p>
                 Humpback Whale – Known for their long pectoral fins and
                 acrobatic breaching behavior, they sing complex songs.
@@ -43,7 +47,9 @@
             </div>
 
             <div class="swiper-slide content">
-              <img src="gray-whale.jpg" />
+              <div class="image-holder">
+                <img src="gray-whale.jpg" />
+              </div>
               <p>
                 Gray Whale – A migratory species with a rough, barnacle-covered
                 body, famous for long coastal migrations.
@@ -51,7 +57,9 @@
             </div>
 
             <div class="swiper-slide content">
-              <img src="fin-whale.jpg" />
+              <div class="image-holder">
+                <img src="fin-whale.jpg" />
+              </div>
               <p>
                 Fin Whale – The second-largest whale, sleek and fast, sometimes
                 called the "greyhound of the sea."
@@ -59,7 +67,9 @@
             </div>
 
             <div class="swiper-slide content">
-              <img src="minke-whale.jpg" />
+              <div class="image-holder">
+                <img src="minke-whale.jpg" />
+              </div>
               <p>
                 Minke Whale – The smallest baleen whale, known for being curious
                 and often approaching boats.
@@ -67,7 +77,9 @@
             </div>
 
             <div class="swiper-slide content">
-              <img src="bowhead-whale.jpg" />
+              <div class="image-holder">
+                <img src="bowhead-whale.jpg" />
+              </div>
               <p>
                 Bowhead Whale (Balaena mysticetus) – Found in Arctic waters,
                 they have the thickest blubber and longest lifespan (over 200
@@ -76,7 +88,9 @@
             </div>
 
             <div class="swiper-slide content">
-              <img src="right-whale.jpg" />
+              <div class="image-holder">
+                <img src="right-whale.jpg" />
+              </div>
               <p>
                 Right Whales – Slow-moving whales with large heads covered in
                 callosities, once heavily hunted for their oil-rich bodies.
@@ -84,7 +98,9 @@
             </div>
 
             <div class="swiper-slide content">
-              <img src="sei-whale.jpg" />
+              <div class="image-holder">
+                <img src="sei-whale.jpg" />
+              </div>
               <p>
                 Sei Whale – A fast-swimming whale that prefers deep offshore
                 waters, feeding on small fish and plankton.
@@ -206,19 +222,24 @@
   .content {
     display: flex;
     align-items: center; /* Center items vertically */
-    justify-content: center; /* Space elements properly */
+    justify-content: center;
+    width: 100%;
+    height: 100%; /* Space elements properly */
   }
 
   .content p {
     margin: 10px 20px;
   }
 
+  .content .image-holder {
+    object-fit: contain;
+    width: 500px;
+    height: 100%;
+  }
+
   .content img {
     width: 100%;
-    height: auto;
-    /* min-height: 90%; Maintain aspect ratio */
-    max-height: 96%;
-    object-fit: contain;
+    height: 100%;
     border-radius: 20px;
   }
 
