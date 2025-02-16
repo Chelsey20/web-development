@@ -18,7 +18,7 @@
   </head>
   <body>
     <!--navbar-->
-    <nav class="navbar navbar-expand-md navbar-light">
+    <nav class="navbar navbar-expand-md bg-body-secondary">
       <div class="container-xxl">
         <a href="#intro" class="navbar-brand">
           <span class="fw-bold text-secondary">Chichi - book</span>
@@ -144,7 +144,6 @@
               <div class="accordion-item">
                 <h2 class="accordion-header" id="heading-1">
                   <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-1" aria-expanded="true" aria-controls="chapter-1">
-                    Chapter 1 - Your First Web Page
                   </button>
                 </h2>
                 <div id="chapter-1" class="accordion-collapse collapse show" aria-labelledby="heading-1" data-bs-parent="#chapters">
@@ -406,6 +405,15 @@
   </div>
   <div class="offcanvas-body">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque nobis recusandae est veniam nulla! Necessitatibus modi facilis temporibus perspiciatis ut.</p>
+    <!--Dropdown-->
+    <div class="dropdown mt-3">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="book-dropdown" data-bs-toggle="dropdown">Choose a book</button>
+      <ul class="dropdown-menu" aria-labelledby="book-dropdown">
+        <li><a href="#" class="dropdown-item">Become a React Superhero</a></li>
+        <li><a href="#" class="dropdown-item">Conquering Vue.js</a></li>
+        <li><a href="#" class="dropdown-item">Leveling up your Next.js</a></li>
+      </ul>
+    </div>
   </div>
 </div>
 
