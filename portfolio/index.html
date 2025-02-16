@@ -22,6 +22,14 @@
       .card-border-primary {
         border-color: #4b2574;
       }
+      .social-icons i {
+    font-size: 5rem; /* Default size */
+      } 
+   @media (max-width: 768px) {
+    .social-icons i {
+      font-size: 2rem; /* Smaller size on small screens */
+    }
+  }
     </style>
   </head>
   <body>
@@ -29,8 +37,8 @@
     <nav class="navbar navbar-expand-md" style="background-color: rgba(114, 56, 160, 0.6);">
       <div class="container-xxl">
         <a href="#intro" class="navbar-brand">
-          <span class="fw-bold text-secondary">Chichi</span>
-          <i class="bi bi-hearts" style="color: #9e72c3"></i>
+          <span class="fw-bold" style="color: black;">Chichi</span>
+          <i class="bi bi-hearts" style="color: #4b2574"></i>
         </a>
         <!--toggle button for mobile nav-->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -167,13 +175,13 @@
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="heading-1">
                       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-1" aria-expanded="true" aria-controls="chapter-1">
-                        2023 - 2025 > Front-end developer
+                        2023 - 2025 Front-end developer
                       </button>
                     </h2>
                     <div id="chapter-1" class="accordion-collapse collapse show" aria-labelledby="heading-1" data-bs-parent="#chapters">
                       <div class="accordion-body">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis assumenda delectus sapiente quidem consequatur odit adipisci necessitatibus nemo aliquid minus modi tempore quibusdam quas vitae, animi ipsam nulla sunt alias.</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis assumenda delectus sapiente quidem consequatur odit adipisci necessitatibus nemo aliquid minus modi tempore quibusdam quas vitae, animi ipsam nulla sunt alias.</p>
+                        <p>I assisted in the development of a responsive cross-platform app, ensuring its functionality across different devices. To maintain app standards, I conducted extensive testing for cross-platform compatibility and fixed issues related to UI and software behavior.</p>
+                        <p>Additionally, I wrote clean, maintainable, and efficient code following the latest industry standards. My work also included developing H5-based mobile applications for gaming platforms.</p>
                       </div>
                     </div>
                   </div>
@@ -185,8 +193,7 @@
                     </h2>
                     <div id="chapter-2" class="accordion-collapse collapse" aria-labelledby="heading-2" data-bs-parent="#chapters">
                       <div class="accordion-body">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis assumenda delectus sapiente quidem consequatur odit adipisci necessitatibus nemo aliquid minus modi tempore quibusdam quas vitae, animi ipsam nulla sunt alias.</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis assumenda delectus sapiente quidem consequatur odit adipisci necessitatibus nemo aliquid minus modi tempore quibusdam quas vitae, animi ipsam nulla sunt alias.</p>
+                        <p>I conducted pre-release and post-release testing and coordinated with cross-functional teams to ensure quality throughout the software development cycle.</p>
                       </div>
                     </div>
                   </div>
@@ -198,8 +205,8 @@
                     </h2>
                     <div id="chapter-3" class="accordion-collapse collapse" aria-labelledby="heading-3" data-bs-parent="#chapters">
                       <div class="accordion-body">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis assumenda delectus sapiente quidem consequatur odit adipisci necessitatibus nemo aliquid minus modi tempore quibusdam quas vitae, animi ipsam nulla sunt alias.</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis assumenda delectus sapiente quidem consequatur odit adipisci necessitatibus nemo aliquid minus modi tempore quibusdam quas vitae, animi ipsam nulla sunt alias.</p>
+                        <p>I performed manual testing of mobile app functionalities, identifying and reporting bugs using Jira Software. </p>
+                        <p>I coordinated with developers to resolve bugs and defects, ensuring smooth functionality. Additionally, I managed test documents and created test points to enhance the testing process.</p>
                       </div>
                     </div>
                   </div>
@@ -224,7 +231,7 @@
               <div class="card-body text-center my-5">
                 <h4 class="card-title">Glassmorphism</h4>
                 <img src="assets/proj-1.png" alt="project 1" class="img-fluid">
-                <a href="#" class="btn btn-border-primary btn-lg mt-3">Take a look</a>
+                <a href="#" class="btn btn-border-primary btn-lg mt-3" onclick="alert('to be continued!')">Take a look</a>
               </div>
             </div>
           </div>
@@ -234,7 +241,7 @@
               <div class="card-body text-center my-5">
                 <h4 class="card-title">3D Image Slider</h4>
                 <img src="assets/proj-2.png" alt="project 1" class="img-fluid">
-                <a href="#" class="btn btn-border-primary btn-lg mt-3">Take a look</a>
+                <a href="#" class="btn btn-border-primary btn-lg mt-3" onclick="alert('to be continued!')">Take a look</a>
               </div>
             </div>
           </div>
@@ -244,7 +251,7 @@
               <div class="card-body text-center my-5">
                 <h4 class="card-title">Glassmorphism</h4>
                 <img src="assets/proj-1.png" alt="project 1" class="img-fluid">
-                <a href="#" class="btn btn-border-primary btn-lg mt-3">Take a look</a>
+                <a href="#" class="btn btn-border-primary btn-lg mt-3" onclick="alert('to be continued!')">Take a look</a>
               </div>
             </div>
           </div>
@@ -257,13 +264,13 @@
 
     <!--Contact me-->
     <section id="contact">
-      <div class="container lg">
+      <div class="container-">
         <div class="text-center">
           <h2>Contact Me</h2>
           <p class="lead text-muted">Go to my social media pages</p>
         </div>
 
-        <div class="list-group-item d-flex justify-content-center gap-5">
+        <div class="list-group-item d-flex justify-content-center gap-5 social-icons">
           <a href="https://www.linkedin.com/in/chelseyesc/"><i class="fa-brands fa-linkedin fa-5x color-icon-primary" ></i></a>
           <a href="https://github.com/Chelsey20"><i class="fa-brands fa-github fa-5x color-icon-primary"></i></a>
           <a href="https://www.facebook.com/arabesqueno1"><i class="fa-brands fa-facebook fa-5x color-icon-primary"></i></a>
